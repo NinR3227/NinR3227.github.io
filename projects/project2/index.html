@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Vinsmoke</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <div class="main-container">
+
+        <div class="top-container">
+            <div class="imgDropdown">
+                <img class="controller" src="images/sanji.jpg">
+            </div>
+            <div class="navButton">
+                <button class="timerButton" onclick="restoreContainers()">
+                    <img src="images/timer.png">
+                </button>
+                <button class="taskButton" onclick="clearContainers()">
+                    <img src="images/create.png">
+                </button>
+            </div>
+            <div class="logocontainer">
+                <a href="https://discord.com/">
+                    <img class="dc" src="images/discord.png" title="Go to Discord">
+                </a>
+                <a href="https://web.facebook.com/">
+                    <img class="fb" src="images/facebook.png" title="Go to Facebook">
+                </a>
+                <a href="https://www.instagram.com/" title="Go to Instagram">
+                    <img class="ig" src="images/ig.png">
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="parent-container">
+        <div class="first-container">
+            <div class="first-container-content">
+                <div class="flex-item">
+                    <label for="farm">Select One</label>
+                    <input list="choices" id="inputWithChoices" name="inputWithChoices" placeholder="Select Farm">
+                    <datalist id="choices">
+                        <option value="Egg">
+                        <option value="Honey">
+                        <option value="Ore">
+                    </datalist>
+                </div>
+                <div class="flex-item">
+                    <label class="label" for="inputTime">Time (Minutes)</label>
+                    <input class="input" id="inputTime" type="number" placeholder="Enter Time (Minutes)">
+                </div>
+                <div class="flex-item">
+                    <label class="label" for="inputWorld">World</label>
+                    <input class="input" id="inputWorld" maxlength="5" type="text" placeholder="Enter World">
+                </div>
+                <div>
+                    <button id="addButton" onclick="transferValues()">Add</button>
+                </div>
+            </div>
+        </div>
+        <div class="second-container">
+            <div class="second-container-content">
+                <h1>Timer Information</h1>
+                <br>
+                <div class="content">
+                    <div class="flex-container">
+                        <table id="table">
+                            <thead>
+                                <tr>
+                                    <th id="header1">Timer Name</th>
+                                    <th id="header2">Time</th>
+                                    <th id="header3">World</th>
+                                    <th id="header4">Status</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <!-- Rows will be added here dynamically -->
+                            </tbody>
+                        </table>
+                    </div>    
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

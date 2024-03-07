@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="parent-container">
+        <div class="body-container">
+            <div class="displayContainer">
+                <div id="display1">
+                    <div id="count">
+                        <div class="countText">Running Count</div>
+                        <input id="countDisplay" readonly>
+                    </div>
+                    <div id="remaining">
+                        <div class="remainingText">Cards Remaining</div>
+                        <input id="remainingDisplay" readonly>
+                    </div>
+                    <div id="dealt">
+                        <div class="dealtText">Cards Dealt</div>
+                        <input id="dealtDisplay" readonly>
+                    </div>
+                    <div id="truecount">
+                        <div class="trueCountText">True Count</div>
+                        <input id="trueCountDisplay" readonly>
+                    </div>
+                    <div id="betunit">
+                        <div class="betUnitText">Bet Unit</div>
+                        <input id="betUnitDisplay" readonly>
+                    </div>
+                </div>
+                <div id="display2">
+                    <div>
+                        <div id="two-six">
+                            <div class="26Text">Percentage of 2-6</div>
+                            <input id="display26" readonly>
+                        </div>
+                        <div id="seven-nine">
+                            <div class="79Text">Percentage of 7-9</div>
+                            <input id="display79" readonly>
+                        </div>
+                        <div id="ten-A">
+                            <div class="10AText">Percentage of 10-A</div>
+                            <input id="display10A" readonly>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="history">History</div>
+            <div id="buttons">
+                <div>A-K</div>
+                <div id="button2">
+                    <button onclick="appendtodisplay('+1')" id="plusOne">2-6</button>
+                    <button onclick="appendtodisplay('-1')" id="minusOne">10-A</button>
+                    <button onclick="appendtodisplay('0')" id="zero">7-9</button>
+                    <button onclick="appendtodisplay('Reset')" id="reset">Reset</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>

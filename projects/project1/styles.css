@@ -1,0 +1,197 @@
+body {
+    margin: 0;
+    background: rgb(5, 150, 150);
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        transform: scale(0.8);
+        transform-origin: left;
+    }
+}
+
+.parent-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 650px;
+    background-color: azure;
+}
+
+.body-container {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(214, 214, 214);
+    width: 50%;
+    height: 90%;
+    border: black 5px solid;
+}
+
+.displayContainer {
+    display: flex;
+    width: 100%;
+    height: 60%;
+}
+
+#display1 {
+    width: 45%;
+    height: 93%;
+    margin-top: 10px;
+    margin-left: 25px;
+}    
+
+#count {
+    width: 90%;
+    height: 15%;
+    margin: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.countText {
+    display: flex;    
+}
+
+.countDisplay {
+    text-align: center;
+    margin: 5px;
+    width: 70%;
+    color: white;
+}
+
+#remaining {
+    width: 90%;
+    height: 15%;
+    margin: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.remainingText {
+    display: flex;    
+}
+
+.remainingDisplay {
+    text-align: center;
+    margin: 5px;
+    width: 70%;
+    color: white;
+}
+
+#dealt {
+    width: 90%;
+    height: 15%;
+    margin: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.dealtText {
+    display: flex;    
+}
+
+.dealtDisplay {
+    text-align: center;
+    margin: 5px;
+    width: 70%;
+    color: white;
+}
+
+#truecount {
+    width: 90%;
+    height: 15%;
+    margin: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.trueCountText {
+    display: flex;    
+}
+
+.trueCountDisplay {
+    text-align: center;
+    margin: 5px;
+    width: 70%;
+    color: white;
+}
+
+#betunit {
+    width: 90%;
+    height: 15%;
+    margin: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.betUnitText {
+    display: flex;    
+}
+
+.betUnitDisplay {
+    text-align: center;
+    margin: 5px;
+    width: 70%;
+    color: white;
+}
+
+#remaining {
+    width: 90%;
+    height: 15%;
+    margin: 10px;
+}
+
+#dealt {
+    width: 90%;
+    height: 15%;
+    margin: 10px;
+}
+
+#truecount {
+    width: 90%;
+    height: 15%;
+    margin: 10px;
+}
+
+#betunit {
+    width: 90%;
+    height: 15%;
+    margin: 10px;
+}
+
+#display2 {
+    width: 45%;
+    height: 93%;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}  
+
+#history {
+    width: 97%;
+    height: 10%;
+    margin: 10px;
+}
+
+#buttons {
+    width: 97%;
+    height: 30%;
+    margin: 10px;
+}
+
+#button2 {
+    display: flex;
+    flex-wrap: wrap;
+    float: right;
+    width: 40%;
+    height: 80%;
+}
+
+#button2 button {
+    box-sizing: border-box;
+    flex-basis: calc(50% - 10px);
+    margin: 5px;
+    border-radius: 10px;
+}
